@@ -10,7 +10,7 @@ Questa scaletta fornisce un percorso strutturato per imparare Prolog, Lisp e Qut
 
 #### Introduzione e Ambiente
 
-- [ ] Cos è Prolog e perché è diverso dai linguaggi imperativi
+- [ ] Cos'è Prolog e perché è diverso dai linguaggi imperativi
 - [ ] Paradigma della programmazione logica
 - [ ] Ambiente di sviluppo: installazione di SWI-Prolog
 - [ ] Primi passi con il REPL (Read-Eval-Print Loop)
