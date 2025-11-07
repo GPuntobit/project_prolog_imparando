@@ -20,4 +20,5 @@ I file PDF presenti in questa cartella vengono automaticamente consultati dal si
 
 ### Medium
 Il sito è su Medium e con una traduzione si riesce a seguire:
+
 https://sigaretto.medium.com/prolog-logic-language-38b53e8389ce
