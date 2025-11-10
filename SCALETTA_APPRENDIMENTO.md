@@ -75,6 +75,12 @@ Questa scaletta fornisce un percorso strutturato per imparare Prolog, Lisp e Qut
 - [ ] Lettura/scrittura file
 - [ ] Parsing di dati strutturati
 
+##### Note dai manuali
+
+- [ ] Negazione come fallimento: uso corretto di `\\+/1` con variabili istanziate
+- [ ] Determinismo vs non-determinismo: effetti su prestazioni e chiarezza
+- [ ] Stream e formati: testo vs binario, `open/3`, `close/1`
+
 ### 🚀 LIVELLO AVANZATO - Tecniche Avanzate (Settimane 9-10)
 
 #### CLP(FD) - Constraint Logic Programming
@@ -84,6 +90,13 @@ Questa scaletta fornisce un percorso strutturato per imparare Prolog, Lisp e Qut
 - [ ] Vincoli aritmetici: `#=`, `#<`, `#>`, `#\=`
 - [ ] Labeling e ricerca di soluzioni
 - [ ] Esempi: puzzle, scheduling, ottimizzazione
+
+##### Dettagli pratici (dai PDF)
+
+- [ ] Definizione domini: `Vars ins Min..Max`, domini enumerati e unione intervalli
+- [ ] Vincoli globali: `all_different/1`, `circuit/1`, `cumulative/2`
+- [ ] Opzioni di ricerca: `label/1`, `labeling/2` con `ff`, `min`, `max`, `bisect`, `down`
+- [ ] Strategia: prima vincolare, poi cercare; ridurre il branching con vincoli forti
 
 #### Metaprogrammazione e Codice Dinamico
 
@@ -119,6 +132,13 @@ Questa scaletta fornisce un percorso strutturato per imparare Prolog, Lisp e Qut
 
 ---
 
+### Note di dialetto (SWI vs SICStus)
+
+- [ ] Differenze principali: librerie, conformità ISO, comportamento I/O
+- [ ] CLP(FD): moduli e nomi predicati compatibili/incompatibili
+- [ ] Debugger e strumenti: `trace/0`, `gtrace/0` (SWI)
+- [ ] Portabilità del codice: direttive condizionali e testing
+
 ## PARTE 2: LISP
 
 ### 📚 LIVELLO BASE - Fondamenti (Settimane 11-14)
@@ -139,6 +159,12 @@ Questa scaletta fornisce un percorso strutturato per imparare Prolog, Lisp e Qut
 - [ ] Quote e valutazione: `'`, `quote`, `eval`
 - [ ] Funzioni speciali vs funzioni ordinarie
 
+##### Funzioni numeriche (dai PDF)
+
+- [ ] Aritmetica numerica: `+`, `-`, `*`, `/`, `mod`, `rem`
+- [ ] Arrotondamenti: `floor`, `ceiling`, `truncate`, `round`
+- [ ] Confronti numerici: `=`, `/=`, `<`, `>`, `<=`, `>=`
+
 #### Funzioni e Definizioni
 
 - [ ] `defun`: definire funzioni
@@ -153,6 +179,11 @@ Questa scaletta fornisce un percorso strutturato per imparare Prolog, Lisp e Qut
 - [ ] Ricorsione tail-recursive
 - [ ] Operazioni su liste: `append`, `reverse`, `member`
 - [ ] Liste associative: `assoc`, `pairlis`
+
+##### Costrutti di iterazione (dal PDF "loops")
+
+- [ ] Macro `loop` avanzata: `for`, `collect`, `sum`, `when`, `finally`
+- [ ] Alternative: `dolist`, `dotimes`, `do`
 
 ### 🔧 LIVELLO INTERMEDIO - Programmazione Funzionale (Settimane 15-18)
 
@@ -269,6 +300,12 @@ Questa scaletta fornisce un percorso strutturato per imparare Prolog, Lisp e Qut
 - [ ] Predicati e clausole
 - [ ] Esempi: database logici, relazioni
 
+##### Aspetti ibridi (dai PDF Qute)
+
+- [ ] Ordine di valutazione ibrido: chiamate funzionali in contesti logici
+- [ ] Unificazione su risultati funzionali e simbolici
+- [ ] Limiti e best practice per evitare non-terminazione
+
 #### Programmazione Funzionale (Stile Lisp)
 
 - [ ] Definizione di funzioni (stile Lisp)
@@ -322,6 +359,8 @@ Questa scaletta fornisce un percorso strutturato per imparare Prolog, Lisp e Qut
 - [ ] Librerie e dipendenze
 - [ ] Best practices organizzative
 
+> Riferimenti consigliati: `Qute_a_prolog_lisp_type_language_for_log.pdf`
+
 #### Ottimizzazione e Performance
 
 - [ ] Profiling codice Qute
@@ -329,6 +368,8 @@ Questa scaletta fornisce un percorso strutturato per imparare Prolog, Lisp e Qut
 - [ ] Efficienza funzionale
 - [ ] Memoization e caching
 - [ ] Best practices performance
+
+> Riferimenti consigliati: `Qute_A_PrologLisp_Type_Language_for_Logic_Programm.pdf`
 
 ### 💼 PROGETTI PRATICI - Applicazioni Ibride (Settimane 27-28)
 
@@ -379,6 +420,53 @@ Questa scaletta fornisce un percorso strutturato per imparare Prolog, Lisp e Qut
 - Progetti incrementali che combinano concetti
 - Code review e refactoring
 - Partecipazione a comunità Prolog, Lisp e Qute
+
+---
+
+## Approfondimenti dai PDF
+
+### Prolog
+
+#### CLP(FD) – Dettagli pratici
+
+- [ ] Definizione domini: `Vars ins Min..Max`, domini enumerati e unione intervalli
+- [ ] Vincoli globali: `all_different/1`, `circuit/1`, `cumulative/2`
+- [ ] Opzioni di ricerca: `label/1`, `labeling/2` con `ff`, `min`, `max`, `bisect`, `down`
+- [ ] Strategia: prima vincolare, poi cercare; ridurre il branching con vincoli forti
+
+#### Built-in, I/O e best practice
+
+- [ ] Negazione come fallimento: uso corretto di `\+/1` con variabili istanziate
+- [ ] Determinismo vs non-determinismo: impatto su prestazioni e chiarezza
+- [ ] Stream e formati: testo vs binario, `open/3`, `close/1`
+
+#### Note di dialetto (SWI vs SICStus) – Approfondimenti
+
+- [ ] Differenze principali: librerie, conformità ISO, comportamento I/O
+- [ ] CLP(FD): moduli e nomi predicati compatibili/incompatibili
+- [ ] Debugger e strumenti: `trace/0`, `gtrace/0` (SWI)
+- [ ] Portabilità del codice: direttive condizionali e testing
+
+### Lisp
+
+#### Funzioni numeriche
+
+- [ ] Aritmetica numerica: `+`, `-`, `*`, `/`, `mod`, `rem`
+- [ ] Arrotondamenti: `floor`, `ceiling`, `truncate`, `round`
+- [ ] Confronti numerici: `=`, `/=`, `<`, `>`, `<=`, `>=`
+
+#### Costrutti di iterazione
+
+- [ ] Macro `loop` avanzata: `for`, `collect`, `sum`, `when`, `finally`
+- [ ] Alternative: `dolist`, `dotimes`, `do`
+
+### Qute
+
+#### Aspetti ibridi logico-funzionali
+
+- [ ] Ordine di valutazione ibrido: chiamate funzionali in contesti logici
+- [ ] Unificazione su risultati funzionali e simbolici
+- [ ] Limiti e best practice per evitare non-terminazione
 
 ---
 
