@@ -17,3 +17,8 @@ I file PDF presenti in questa cartella vengono automaticamente consultati dal si
 - I PDF vengono letti automaticamente ad ogni interazione
 - Il contenuto dei PDF viene integrato nelle spiegazioni e negli esempi
 - Assicurati che i PDF siano in formato leggibile e non protetti da password
+
+### Medium
+Il sito è su Medium e con una traduzione si riesce a seguire:
+
+https://sigaretto.medium.com/prolog-logic-language-38b53e8389ce
